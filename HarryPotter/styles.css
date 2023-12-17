@@ -27,10 +27,11 @@ body {
 
 .nav-links li a {
   display: block;
-  color: white;
+  color:rgb(247, 193, 45);
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  font-weight: bold;
 }
 
 .nav-links li a:hover {
@@ -43,6 +44,32 @@ header{
   justify-content: space-evenly;
 }
 
-main {
-  height: 100vh;
+.maisons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 80px;
+  padding-bottom: 50px;
+  padding-top: 50px;
+  color: rgb(187, 98, 98);
+}
+
+.maisons img {
+  height: 300px;
+  width: 300px;
+}
+
+.intro{
+  color: rgb(236, 206, 124);
+  padding-left: 50px;
+}
+
+.intro h1{
+  padding-left: 50px;
+  font-size: 40px;
+}
+
+.intro p{
+  font-size: 18px;
 }
