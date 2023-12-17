@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Kalnia&family=Preahvihear&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalnia&family=Preahvihear&display=swap");
 
 body {
-  font-family: 'Kalnia', serif;
+  font-family: "Kalnia", serif;
   margin: 0;
 }
 
@@ -21,9 +21,9 @@ body {
 }
 
 .navbar {
-  background-color:rgba(0, 0, 0, 0.329);
-  overflow:hidden;
-  font-size:200%;
+  background-color: rgba(0, 0, 0, 0.438);
+  overflow: hidden;
+  font-size: 200%;
 }
 
 .navbar .nav-links{
@@ -51,19 +51,19 @@ body {
 }
 
 .nav-links li a:hover {
-  background-color:rgba(247, 193, 45, 0.212);
+  background-color: rgba(247, 193, 45, 0.212);
   color: rgb(247, 193, 45);
   text-decoration: underline;
 }
 
-header{
+header {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-evenly;
 }
 
-.personnages{
+.films {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
@@ -73,39 +73,52 @@ header{
   gap: 80px;
   padding-bottom: 50px;
   padding-top: 50px;
-  color: rgb(221, 207, 125);
+  color: rgb(233, 209, 130);
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
-.personnages img {
-  height: 150px;
+.films img {
+  height: 230px;
   width: 150px;
-  border: solid 3px rgb(129, 111, 27)
+  border: solid 3px rgb(121, 104, 32);
 }
 
-main h1{
+.films h2 {
+  border: solid 1px rgb(204, 171, 120);
+  font-size: 18px;
+}
+
+.intro {
+  color: rgb(247, 147, 80);
+  padding-left: 50px;
+}
+
+.intro h1 {
+  padding-left: 50px;
+  font-size: 40px;
+}
+
+.intro p {
+  font-size: 18px;
+  padding-right: 20px;
+}
+
+footer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.897);
+}
+
+.footer-content {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  padding-left : 100px;
-  color: rgba(233, 105, 66, 0.863);
-  font-weight: bold;
-}
-
-footer{
-    position: absolute;
-    background-color:rgba(0, 0, 0, 0.897);
-}
-
-.footer-content{
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-    color: antiquewhite;
-    padding-bottom: 50px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  color: antiquewhite;
+  padding-bottom: 50px;
 }
 
 @media screen and (max-width: 600px) {
@@ -114,5 +127,13 @@ footer{
   }
   .intro {
     padding: 0;
+  }
+  .intro h1 {
+    text-align: center;
+    padding: 0;
+  }
+  .intro p {
+    padding-right: 20px;
+    text-align: center;
   }
 }
